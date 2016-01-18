@@ -7,7 +7,7 @@ import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.example.jeedemo.domain.Car;
+import com.example.jeedemo.domain.Wear;
 import com.example.jeedemo.domain.Person;
 import com.example.jeedemo.service.PersonManager;
 import com.example.jeedemo.service.SellingManager;
@@ -24,14 +24,14 @@ public class SaleFormBean implements Serializable {
 	@Inject
 	private PersonManager pm;
 
-	private Long carId;
+	private Long wearId;
 	private Long personId;
 	
-	public Long getCarId() {
-		return carId;
+	public Long getWearId() {
+		return wearId;
 	}
-	public void setCarId(Long carId) {
-		this.carId = carId;
+	public void setWearId(Long wearId) {
+		this.wearId = wearId;
 	}
 	public Long getPersonId() {
 		return personId;
@@ -40,16 +40,16 @@ public class SaleFormBean implements Serializable {
 		this.personId = personId;
 	}
 
-	public List<Car> getAvailableCars() {
-		return sm.getAvailableCars();
+	public List<Wear> getAvailableWears() {
+		return sm.getAvailableWears();
 	}
 
 	public List<Person> getAllPersons() {
 		return pm.getAllPersons();
 	}
 
-	public String sellCar() {
-		sm.sellCar(personId, carId);
+	public String sellWear() {
+		sm.sellWear(personId, wearId);
 		return null;
 	}
 }
