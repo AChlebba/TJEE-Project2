@@ -88,6 +88,12 @@
            		 <version>0.8.0-RC1</version>
            		 <type>jar</type>
 		</dependency>
+		<dependency>
+			<groupId>net.bootsfaces</groupId>
+			<artifactId>bootsfaces</artifactId>
+			<version>0.8.0</version>
+			<scope>compile</scope>
+		</dependency>
 		<!-- end RichFaces stuff -->
 
 		<!-- ICEFaces <dependency> <groupId>org.icefaces</groupId> <artifactId>icefaces</artifactId> 
