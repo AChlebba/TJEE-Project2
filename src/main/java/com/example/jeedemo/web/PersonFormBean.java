@@ -55,6 +55,11 @@ public class PersonFormBean implements Serializable {
 		//return null;
 	}
 
+	public String editPerson() {
+		pm.editPerson(person);
+		return "showPersons";
+	}
+
 	public String deletePerson() {
 		Person personToDelete = persons.getRowData();
 		pm.deletePerson(personToDelete);
@@ -64,6 +69,12 @@ public class PersonFormBean implements Serializable {
 	public String showDetails() {
 		personToShow = persons.getRowData();
 		return "details";
+	}
+
+	public String showEdit() {
+		Person personToEdit = persons.getRowData();
+		pm.editPerson(personToEdit);
+		return "showEdit";
 	}
 	
 	public String disposeWear(){

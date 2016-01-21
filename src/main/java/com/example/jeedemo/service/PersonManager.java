@@ -21,6 +21,10 @@ public class PersonManager {
 		em.persist(person);
 	}
 
+	public void editPerson(Person person) {
+		em.merge(person);
+	}
+
 	public void deletePerson(Person person) {
 		person = em.find(Person.class, person.getId());
 		em.remove(person);
