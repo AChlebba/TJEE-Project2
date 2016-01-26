@@ -21,7 +21,7 @@ public class DeletePlayerServlet extends HttpServlet{
 			throws ServletException, IOException {
 		String link = request.getPathInfo();
 		personManager.deletePerson(
-				personManager.getPersonById(Long.parseInt(link.substring(link.lastIndexOf("/") + 1, link.length()))));
+				personManager.getPersonById(Long.parseLong(link.substring(link.lastIndexOf("/") + 1, link.length()))));
 
 	}
 }

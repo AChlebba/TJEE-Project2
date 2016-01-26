@@ -41,7 +41,7 @@ public class PlayerRest {
 	public Response add(
 		@FormParam("firstName") String firstName,
 		@FormParam("pin") String pin,
-		@FormParam("registrationDate") Date registrationDate
+		@FormParam("registrationDate") String registrationDate
 	){
 			Person person = new Person();
 			
@@ -88,7 +88,7 @@ public class PlayerRest {
             	@PathParam("id") long id,
             	@FormParam("firstName") String firstName,
 		@FormParam("pin") String pin,
-		@FormParam("registrationDate") Date registrationDate)
+		@FormParam("registrationDate") String registrationDate)
     {
 	 	Person person = new Person();
 	

@@ -21,7 +21,7 @@ public class UpdatePlayerServlet extends HttpServlet{
 			throws ServletException, IOException {
 		String link = request.getPathInfo();
 		request.setAttribute("editedPlayer",
-				personManager.getPersonById(Long.parseInt(link.substring(link.lastIndexOf("/") + 1, link.length()))));
+				personManager.getPersonById(Long.parseLong(link.substring(link.lastIndexOf("/") + 1, link.length()))));
 		request.getRequestDispatcher("/player/edit.jsp").forward(request, response);
 	}
 

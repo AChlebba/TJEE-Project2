@@ -27,7 +27,7 @@ public class Person {
 
 	private String firstName = "unknown";
 	private String pin = "";
-	private Date registrationDate = new Date();
+	private String registrationDate = "";
 
 	private List<Wear> wears = new ArrayList<Wear>();
 
@@ -56,11 +56,11 @@ public class Person {
 		this.pin = pin;
 	}
 
-	@Temporal(TemporalType.DATE)
-	public Date getRegistrationDate() {
+	@Size(min = 4)
+	public String getRegistrationDate() {
 		return registrationDate;
 	}
-	public void setRegistrationDate(Date registrationDate) {
+	public void setRegistrationDate(String registrationDate) {
 		this.registrationDate = registrationDate;
 	}
 
