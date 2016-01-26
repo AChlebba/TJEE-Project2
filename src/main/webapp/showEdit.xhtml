@@ -19,12 +19,12 @@
 				<h:outputText value="#{msg.personPinLabel}" />
 				<h:inputText id="pin" value="#{personBean.person.pin}" />
 
-				<h:outputText value="Registration date" />
+				<h:outputText value="#{msg.personDate}" />
 				<h:inputText id="calendar" value="#{personBean.person.registrationDate}"/>
 				
 			</h:panelGrid>
 
-			<h:commandButton value="#{msg.personFormOKButton}"
+			<h:commandButton value="#{msg.personFormEditButton}"
 				action="#{personBean.editPerson}" />
 
 			<h:panelGrid>

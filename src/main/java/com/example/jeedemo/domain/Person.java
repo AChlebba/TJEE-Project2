@@ -25,7 +25,7 @@ public class Person {
 
 	private Long id;
 
-	private String firstName = "unknown";
+	private String firstName = "Anonim";
 	private String pin = "";
 	private String registrationDate = "";
 

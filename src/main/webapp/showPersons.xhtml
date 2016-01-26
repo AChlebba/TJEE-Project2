@@ -22,10 +22,9 @@
 
 				<h:column>
 					<f:facet name="header">#{msg.action}</f:facet>
-					<h:commandLink value="#{msg.actionDelete}"
-						action="#{personBean.deletePerson}" />
-					<h:commandLink value=" Details " action="#{personBean.showDetails}"/>
-					<h:commandLink value=" Edit " action="#{personBean.showEdit}"/>
+					<h:commandButton value="#{msg.actionDelete}"	action="#{personBean.deletePerson}" />
+					<h:commandButton value="#{msg.actionDetails}" 	action="#{personBean.showDetails}"/>
+					<h:commandButton value="#{msg.actionEdit}" 	action="#{personBean.showEdit}"/>
 				</h:column>
 
 			</h:dataTable>
