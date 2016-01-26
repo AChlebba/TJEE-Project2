@@ -1,1 +1,1 @@
-<% response.sendRedirect("home.jsf"); %>
+<% request.getRequestDispatcher("home.jsf").forward(request, response); %>

@@ -20,6 +20,11 @@ public class PersonManager {
 		person.setId(null);
 		em.persist(person);
 	}
+		
+	public Person getPersonById(Long id) {
+		return (Person) em.find(Person.class, id);
+		
+	}
 
 	public void editPerson(Person person) {
 		em.merge(person);
