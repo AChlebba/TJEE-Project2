@@ -42,12 +42,12 @@
 <jsp:include page="../elements/menu.jsp" />
 <div class="container">
     <div class="row">
-        <h1 class="text-center">Add player</h1>
+        <h1 class="text-center">Dodaj klienta</h1>
 
         	<form action="${pageContext.request.contextPath}/rest/playerr/add" data-toggle="validator" method="post" class="form-horizontal">
         	
 		        <div class="form-group">
-		            <label for="firstName" class="col-sm-2 control-label">First name: </label>
+		            <label for="firstName" class="col-sm-2 control-label">Imie: </label>
 
 		            <div class="col-sm-10">
 		                <input type="text" name="firstName" id="firstName" class="form-control" data-minlength="2" value="${editedPerson.getFirstName()}" required >
@@ -55,7 +55,7 @@
 		        </div>
 
 		        <div class="form-group">
-		            <label for="pin" class="col-sm-2 control-label">Pin: </label>
+		            <label for="pin" class="col-sm-2 control-label">Pesel: </label>
 
 		            <div class="col-sm-10">
 		                <input type="text" name="pin" id="pin" class="form-control"  required>
@@ -63,15 +63,15 @@
 		        </div>
 
 		        <div class="form-group">
-		            <label for="registrationDate" class="col-sm-2 control-label">Date: </label>
+		            <label for="registrationDate" class="col-sm-2 control-label">Data rejestracji: </label>
 
 		            <div class="col-sm-10">
 		                <input type="text" name="registrationDate" id="registrationDate" class="form-control" placeholder="0" required>
 		            </div>
 		        </div>
 		        <div class="form-group text-center">
-		                <button id="add" type="submit" class="btn btn-success">Add</button>
-				<a href="${pageContext.request.contextPath}/player/showPlayers.jsp" class="btn btn-default" role="button">Back</a>
+		                <button id="add" type="submit" class="btn btn-success">Dodaj</button>
+				<a href="${pageContext.request.contextPath}/player/showPlayers.jsp" class="btn btn-default" role="button">Cofnij</a>
 		 	    </div>
 		        </div>
 		        

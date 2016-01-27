@@ -53,7 +53,7 @@ public class PlayerRest {
 			
 			java.net.URI location;
 			try {
-				location = new java.net.URI("../player/showPlayers.jsp");
+				location = new java.net.URI("../showPersons.jsf");
 				return Response.temporaryRedirect(location).build();
 			} catch (URISyntaxException e) {
 				// TODO Auto-generated catch block

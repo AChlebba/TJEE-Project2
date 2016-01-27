@@ -11,28 +11,9 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<title>Team</title>
+<title>Sklep</title>
 <script>
-	/* 	$(document).ready(function() {
-	 $.ajax({
-	 url : '${pageContext.request.contextPath}/rest/playerr/getAll',
-	 type : 'GET',
-	 success : function(data) {
-	 var d = data.length;
-	 var table = document.getElementById("table");
-	 for (var i = 0; i < d; i++) {
-
-	 tr = $('<tr/>');
-	 tr.append("<td>" + data[i].firstName + "</td>");
-	 tr.append("<td>" + data[i].pin + "</td>");
-	 tr.append("<td>" + data[i].registrationDate + "</td>");
-	 td = $('<td/>');
-	 tr.append(td);
-	 $(table).append(tr);
-	 }
-	 }
-	 });
-	 }); */
+	
 	$(document)
 			.ready(
 					function() {
@@ -88,15 +69,15 @@
 
 	<div class="container">
 		<div class="row">
-			<h1 class="text-center">Players</h1>
+			<h1 class="text-center">Klienci</h1>
 			<br />
 
 			<table id="userdata" class="table table-striped">
 				<thead>
-						<th>First name</th>
-						<th>Pin</th>
-						<th>registrationDate</th>
-						<th>Action</th>
+						<th>Imie</th>
+						<th>Pesel</th>
+						<th>Data rejestracji</th>
+						<th>Akcja</th>
 				</thead>
 				<tbody>
 				
