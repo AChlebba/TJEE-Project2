@@ -38,7 +38,7 @@ public class PlayerRest {
 	@POST
 	@Path("/add")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response add(
+	public Person add(
 		@FormParam("firstName") String firstName,
 		@FormParam("pin") String pin,
 		@FormParam("registrationDate") String registrationDate
@@ -51,15 +51,8 @@ public class PlayerRest {
 			
 			personManager.addPerson(person);
 			
-			java.net.URI location;
-			try {
-				location = new java.net.URI("../showPersons.jsf");
-				return Response.temporaryRedirect(location).build();
-			} catch (URISyntaxException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		    return null;
+			
+		    return person;
 	}
 	
 	

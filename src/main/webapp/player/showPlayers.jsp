@@ -5,8 +5,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="${pageContext.request.contextPath}/webjars/jquery/2.1.4/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/webjars/jquery/2.1.4/jquery.js"></script>
 <link rel='stylesheet'
-	href="../webjars/bootstrap/3.2.0/css/bootstrap.min.css">
+	href="${pageContext.request.contextPath}/webjars/bootstrap/3.2.0/css/bootstrap.min.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script
